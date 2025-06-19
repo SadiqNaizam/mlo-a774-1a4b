@@ -21,8 +21,9 @@ const App = () => (
         <Routes>
 
 
-          <Route path="/" element={<AuthPage />} />
-          <Route path="/chat-interface" element={<ChatInterfacePage />} />
+          <Route path="/" element={<ChatInterfacePage />} />
+          <Route path="/auth" element={<AuthPage />} /> {/* AuthPage now accessible at /auth */}
+          <Route path="/chat-interface" element={<ChatInterfacePage />} /> {/* Kept for direct access */}
           {/* catch-all */}
           <Route path="*" element={<NotFound />} />
 
